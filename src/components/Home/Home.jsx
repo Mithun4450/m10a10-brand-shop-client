@@ -1,9 +1,13 @@
+import Brands from "../Brands/Brands";
+import BrandsInput from "../BrandsInput/BrandsInput";
+
 
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home</h1>
+            <BrandsInput></BrandsInput>
+            <Brands></Brands>
             
         </div>
     );
