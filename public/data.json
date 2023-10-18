@@ -1,0 +1,346 @@
+
+// ::::Toyota:::::::
+
+[ 
+    {
+      "image": "https://i.ibb.co/6RL4V9G/1.png",
+      "name": "Toyota Corolla",
+      "brand-name": "Toyota",
+      "type": "Sedan",
+      "price": 24000,
+      "description": "The Toyota Corolla is a popular compact sedan known for its reliability and fuel efficiency.",
+      "rating": 4.5
+    },
+    {
+      "image": "https://i.ibb.co/7WJ9P5Q/2.jpg",
+      "name": "Toyota Camry",
+      "brand-name": "Toyota",
+      "type": "Sedan",
+      "price": 33000,
+      "description": "The Toyota Camry is a comfortable and spacious midsize sedan with a reputation for quality and comfort.",
+      "rating": 4.7
+    },
+    {
+      "image": "https://i.ibb.co/r0ZPHSj/3.webp",
+      "name": "Toyota RAV4",
+      "brand-name": "Toyota",
+      "type": "SUV",
+      "price": 28000,
+      "description": "The Toyota RAV4 is a compact SUV that combines versatility and practicality.",
+      "rating": 4.6
+    },
+    {
+      "image": "toyota4.jpg",
+      "name": "Toyota Highlander",
+      "brand-name": "Toyota",
+      "type": "SUV",
+      "price": 40000,
+      "description": "The Toyota Highlander is a spacious and family-friendly SUV with a reputation for safety and comfort.",
+      "rating": 4.8
+    },
+    {
+      "image": "toyota5.jpg",
+      "name": "Toyota Tacoma",
+      "brand-name": "Toyota",
+      "type": "Truck",
+      "price": 27000,
+      "description": "The Toyota Tacoma is a rugged and reliable midsize pickup truck designed for various tasks.",
+      "rating": 4.4
+    },
+    {
+      "image": "toyota6.jpg",
+      "name": "Toyota Prius",
+      "brand-name": "Toyota",
+      "type": "Hybrid",
+      "price": 25000,
+      "description": "The Toyota Prius is a pioneering hybrid car known for its fuel efficiency and eco-friendliness.",
+      "rating": 4.5
+    },
+    {
+      "image": "toyota7.jpg",
+      "name": "Toyota 4Runner",
+      "brand-name": "Toyota",
+      "type": "SUV",
+      "price": 36000,
+      "description": "The Toyota 4Runner is a rugged and off-road-capable SUV for adventure seekers.",
+      "rating": 4.6
+    }
+  ]
+
+//   :::::: Ford ::::::
+[
+    {
+      "image": "ford1.jpg",
+      "name": "Ford Mustang",
+      "brand-name": "Ford",
+      "type": "Sports Car",
+      "price": 45000,
+      "description": "The Ford Mustang is an iconic sports car known for its powerful performance and classic design.",
+      "rating": 4.7
+    },
+    {
+      "image": "ford2.jpg",
+      "name": "Ford F-150",
+      "brand-name": "Ford",
+      "type": "Truck",
+      "price": 38000,
+      "description": "The Ford F-150 is a top-selling pickup truck with a strong and durable design.",
+      "rating": 4.6
+    },
+    {
+      "image": "ford3.jpg",
+      "name": "Ford Explorer",
+      "brand-name": "Ford",
+      "type": "SUV",
+      "price": 32000,
+      "description": "The Ford Explorer is a versatile and family-friendly SUV with advanced features.",
+      "rating": 4.5
+    },
+    {
+      "image": "ford4.jpg",
+      "name": "Ford Escape",
+      "brand-name": "Ford",
+      "type": "SUV",
+      "price": 28000,
+      "description": "The Ford Escape is a compact SUV offering a balance of efficiency and performance.",
+      "rating": 4.4
+    },
+    {
+      "image": "ford5.jpg",
+      "name": "Ford Focus",
+      "brand-name": "Ford",
+      "type": "Hatchback",
+      "price": 21000,
+      "description": "The Ford Focus is a practical and compact hatchback with agile handling.",
+      "rating": 4.3
+    },
+    {
+      "image": "ford6.jpg",
+      "name": "Ford Fusion",
+      "brand-name": "Ford",
+      "type": "Sedan",
+      "price": 27000,
+      "description": "The Ford Fusion is a comfortable and stylish sedan with a spacious interior.",
+      "rating": 4.5
+    },
+    {
+      "image": "ford7.jpg",
+      "name": "Ford Ranger",
+      "brand-name": "Ford",
+      "type": "Truck",
+      "price": 29000,
+      "description": "The Ford Ranger is a midsize pickup truck designed for both work and play.",
+      "rating": 4.6
+    }
+  ]
+
+
+// :::::::BMW ::::::::
+
+[
+    {
+      "image": "bmw1.jpg",
+      "name": "BMW 3 Series",
+      "brand-name": "BMW",
+      "type": "Sedan",
+      "price": 42000,
+      "description": "The BMW 3 Series is a luxurious and sporty sedan, known for its performance and high-quality interior.",
+      "rating": 4.6
+    },
+    {
+      "image": "bmw2.jpg",
+      "name": "BMW X5",
+      "brand-name": "BMW",
+      "type": "SUV",
+      "price": 58000,
+      "description": "The BMW X5 is a premium SUV offering a blend of comfort and advanced technology.",
+      "rating": 4.7
+    },
+    {
+      "image": "bmw3.jpg",
+      "name": "BMW 5 Series",
+      "brand-name": "BMW",
+      "type": "Sedan",
+      "price": 52000,
+      "description": "The BMW 5 Series is an executive sedan with a focus on performance and sophistication.",
+      "rating": 4.6
+    },
+    {
+      "image": "bmw4.jpg",
+      "name": "BMW X3",
+      "brand-name": "BMW",
+      "type": "SUV",
+      "price": 48000,
+      "description": "The BMW X3 is a compact luxury SUV known for its agility and premium features.",
+      "rating": 4.5
+    },
+    {
+      "image": "bmw5.jpg",
+      "name": "BMW 7 Series",
+      "brand-name": "BMW",
+      "type": "Sedan",
+      "price": 78000,
+      "description": "The BMW 7 Series is a flagship sedan offering ultimate luxury and advanced technology.",
+      "rating": 4.8
+    },
+    {
+      "image": "bmw6.jpg",
+      "name": "BMW X1",
+      "brand-name": "BMW",
+      "type": "SUV",
+      "price": 38000,
+      "description": "The BMW X1 is a subcompact luxury SUV with a stylish design and premium features.",
+      "rating": 4.4
+    },
+    {
+      "image": "bmw7.jpg",
+      "name": "BMW 4 Series",
+      "brand-name": "BMW",
+      "type": "Coupe",
+      "price": 46000,
+      "description": "The BMW 4 Series is a sporty coupe with impressive performance and a sleek design.",
+      "rating": 4.6
+    }
+  ]
+
+
+  // :::::::Mercedes-Benz::::::::
+
+  [
+    {
+      "image": "mercedes1.jpg",
+      "name": "Mercedes-Benz C-Class",
+      "brand-name": "Mercedes-Benz",
+      "type": "Sedan",
+      "price": 45000,
+      "description": "The Mercedes-Benz C-Class is a luxurious and elegant sedan with a blend of performance and opulence.",
+      "rating": 4.7
+    },
+    {
+      "image": "mercedes2.jpg",
+      "name": "Mercedes-Benz GLE",
+      "brand-name": "Mercedes-Benz",
+      "type": "SUV",
+      "price": 58000,
+      "description": "The Mercedes-Benz GLE is a midsize luxury SUV known for its comfort, technology, and versatility.",
+      "rating": 4.6
+    },
+    {
+      "image": "mercedes3.jpg",
+      "name": "Mercedes-Benz E-Class",
+      "brand-name": "Mercedes-Benz",
+      "type": "Sedan",
+      "price": 52000,
+      "description": "The Mercedes-Benz E-Class is an executive sedan with a focus on performance and sophistication.",
+      "rating": 4.6
+    },
+    {
+      "image": "mercedes4.jpg",
+      "name": "Mercedes-Benz GLC",
+      "brand-name": "Mercedes-Benz",
+      "type": "SUV",
+      "price": 48000,
+      "description": "The Mercedes-Benz GLC is a compact luxury SUV with a combination of style and practicality.",
+      "rating": 4.5
+    },
+    {
+      "image": "mercedes5.jpg",
+      "name": "Mercedes-Benz S-Class",
+      "brand-name": "Mercedes-Benz",
+      "type": "Sedan",
+      "price": 78000,
+      "description": "The Mercedes-Benz S-Class is a flagship sedan that offers uncompromising luxury and cutting-edge technology.",
+      "rating": 4.8
+    },
+    {
+      "image": "mercedes6.jpg",
+      "name": "Mercedes-Benz GLA",
+      "brand-name": "Mercedes-Benz",
+      "type": "SUV",
+      "price": 38000,
+      "description": "The Mercedes-Benz GLA is a subcompact luxury SUV with a sporty design and premium features.",
+      "rating": 4.4
+    },
+    {
+      "image": "mercedes7.jpg",
+      "name": "Mercedes-Benz CLA",
+      "brand-name": "Mercedes-Benz",
+      "type": "Coupe",
+      "price": 46000,
+      "description": "The Mercedes-Benz CLA is a stylish and compact coupe with a perfect blend of performance and style.",
+      "rating": 4.6
+    }
+  ]
+
+
+
+//   ::::: Honda ::::
+
+[
+    {
+      "image": "honda1.jpg",
+      "name": "Honda Civic",
+      "brand-name": "Honda",
+      "type": "Sedan",
+      "price": 23000,
+      "description": "The Honda Civic is a compact sedan known for its reliability and fuel efficiency.",
+      "rating": 4.5
+    },
+    {
+      "image": "honda2.jpg",
+      "name": "Honda CR-V",
+      "brand-name": "Honda",
+      "type": "SUV",
+      "price": 28000,
+      "description": "The Honda CR-V is a popular compact SUV with a spacious interior and comfortable ride.",
+      "rating": 4.6
+    },
+    {
+      "image": "honda3.jpg",
+      "name": "Honda Accord",
+      "brand-name": "Honda",
+      "type": "Sedan",
+      "price": 26000,
+      "description": "The Honda Accord is a midsize sedan that offers a balanced blend of performance and comfort.",
+      "rating": 4.7
+    },
+    {
+      "image": "honda4.jpg",
+      "name": "Honda Pilot",
+      "brand-name": "Honda",
+      "type": "SUV",
+      "price": 35000,
+      "description": "The Honda Pilot is a family-friendly midsize SUV with three rows of seating and advanced safety features.",
+      "rating": 4.8
+    },
+    {
+      "image": "honda5.jpg",
+      "name": "Honda Fit",
+      "brand-name": "Honda",
+      "type": "Hatchback",
+      "price": 19000,
+      "description": "The Honda Fit is a practical and versatile subcompact hatchback with a spacious interior.",
+      "rating": 4.4
+    },
+    {
+      "image": "honda6.jpg",
+      "name": "Honda HR-V",
+      "brand-name": "Honda",
+      "type": "SUV",
+      "price": 22000,
+      "description": "The Honda HR-V is a subcompact SUV designed for urban adventures with a flexible interior.",
+      "rating": 4.3
+    },
+    {
+      "image": "honda7.jpg",
+      "name": "Honda Odyssey",
+      "brand-name": "Honda",
+      "type": "Minivan",
+      "price": 31000,
+      "description": "The Honda Odyssey is a spacious and family-friendly minivan with innovative features and comfortable seating.",
+      "rating": 4.7
+    }
+  ]
+  
+  
+  
