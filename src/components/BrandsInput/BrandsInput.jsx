@@ -7,7 +7,7 @@ const BrandsInput = () => {
     
 
     useEffect(() =>{
-        fetch('http://localhost:5000/brands')
+        fetch('https://m10a10-brand-shop-server-5xcitl8tj-mithun-modaks-projects.vercel.app/brands')
         .then(res =>res.json())
         .then(brands => {
             
@@ -19,7 +19,7 @@ const BrandsInput = () => {
     const handleDelete = _id =>{
         
 
-        fetch(`http://localhost:5000/brands/${_id}`, {
+        fetch(`https://m10a10-brand-shop-server-5xcitl8tj-mithun-modaks-projects.vercel.app/brands/${_id}`, {
             method: 'DELETE'
         })
             .then(res =>res.json())
@@ -38,7 +38,7 @@ const BrandsInput = () => {
 
         const brand = {name, photo};
         
-        fetch('http://localhost:5000/brands', {
+        fetch('https://m10a10-brand-shop-server-5xcitl8tj-mithun-modaks-projects.vercel.app/brands', {
             method: 'POST',
             headers: {
               'content-type' : 'application/json'
