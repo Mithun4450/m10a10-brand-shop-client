@@ -14,6 +14,7 @@ import Products from './components/Products/Products';
 import Update from './components/Update/Update';
 import AuthProvider from './components/AuthProvider/AuthProvider';
 import Register from './components/Register/Register';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 
 const router = createBrowserRouter([
   {
@@ -26,19 +27,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/addProduct",
-        element: <AddProduct></AddProduct>
+        element: <ProtectedRoute><AddProduct></AddProduct></ProtectedRoute>
       },
       {
         path: "/products/:name",
         element: <Products></Products>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/brandWise/${params.name}`)
+        loader: ({params}) => fetch(`https://m10a10-brand-shop-server.vercel.app/products/brandWise/${params.name}`)
         
 
       },
       {
         path: "/update/:id",
         element: <Update></Update>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/productWise/${params.id}`)
+        loader: ({params}) => fetch(`https://m10a10-brand-shop-server.vercel.app/products/productWise/${params.id}`)
       
       },
       {
