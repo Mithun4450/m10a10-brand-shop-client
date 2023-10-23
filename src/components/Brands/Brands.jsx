@@ -10,6 +10,7 @@ import Brand from "../Brand/Brand";
 const Brands = () => {
 
     const [brands, setBrands] = useState(null);
+    
 
     useEffect(() =>{
         fetch('https://m10a10-brand-shop-server.vercel.app/brands')

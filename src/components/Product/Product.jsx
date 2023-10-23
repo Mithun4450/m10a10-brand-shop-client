@@ -15,8 +15,10 @@ const Product = ({product}) => {
                     <p><span className="font-bold">Rating: </span><span>{rating}</span> out of 5</p>
                     <div className="flex items-center gap-6">
                         
+                        
+                        <Link to={`/productDetails/${_id}`}>
                         <button className="btn btn-accent">Details</button>
-
+                        </Link>
                         <Link to={`/update/${_id}`}>
                             <button className="btn btn-accent">Update</button>
                         </Link>
