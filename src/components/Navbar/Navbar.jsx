@@ -1,4 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+
+
 
 
 const Navbar = () => {
@@ -7,12 +11,23 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/addProduct">Add Product</NavLink></li>
         <li><NavLink to="/myCart">My Cart</NavLink></li>
-     
+        
+        
+        
     </>
- 
+
+    const { logOut, user} = useContext(AuthContext);
+    console.log(user)
+
+    const handleLogOut = () =>{
+        logOut()
+          .then()
+          .catch()
+    }
+        
     
     return (
-        <div className="navbar bg-gray-100 py-4 flex flex-col md:flex-row ">
+        <div className="navbar bg-base-100 py-4 flex flex-col md:flex-row ">
             
            
             <div className="w-3/4">
@@ -27,7 +42,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl"><img className="w-20" src="/carlogo.png" alt="" /><span>Auto Shop</span></a>
+                    <a className="btn btn-ghost normal-case text-xl"><img className="w-16" src="/public/carlogo.png" alt="" /><span>Auto Shop</span></a>
                 </div>
 
 
@@ -42,12 +57,24 @@ const Navbar = () => {
            
             
             <div className="space-x-3 font-semibold w-full flex justify-center lg:w-1/4">
-                <ul>
-                    <li><NavLink to="/login">Login</NavLink></li>
-                </ul>
-                
-                
-            
+                {
+                    user? <>
+                    <p>{user.displayName}</p>
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                        {
+                           user.photoURL? <img src={user.photoURL} /> : <img src="/public/avater.png"></img>
+
+                        }
+                        </div>
+                    </label>
+                    <NavLink className="uppercase" onClick={handleLogOut}>Logout</NavLink>
+                     </>: <>
+                     <NavLink className="uppercase" to="/login">Login</NavLink>
+                     
+                     </>
+                    
+                }
       
             </div>
         </div>

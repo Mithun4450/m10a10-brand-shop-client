@@ -64,14 +64,14 @@ const AddProduct = () => {
        
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
+                    {/* <div className="text-center lg:text-left">
                     {
                         Array.isArray(products) && products.map(product => <p key={product._id}><li key={product._id} >{product.name}</li> <button onClick={() => handleDelete (product._id)} >X</button></p>
                         
                         )
                     }
                     
-                    </div>
+                    </div> */}
                     <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
                     <form onSubmit={handleProductSubmit} className="card-body">
                         <div className="form-control">
