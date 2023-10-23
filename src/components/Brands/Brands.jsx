@@ -12,7 +12,7 @@ const Brands = () => {
     const [brands, setBrands] = useState(null);
 
     useEffect(() =>{
-        fetch('https://m10a10-brand-shop-server-5xcitl8tj-mithun-modaks-projects.vercel.app/brands')
+        fetch('http://localhost:5000/brands')
         .then(res =>res.json())
         .then(brands => {
             

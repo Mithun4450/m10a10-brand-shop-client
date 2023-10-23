@@ -14,15 +14,15 @@ const AddProduct = () => {
         })
     },[])
 
-    const handleDelete = _id =>{
+    // const handleDelete = _id =>{
         
 
-        fetch(`http://localhost:5000/products/${_id}`, {
-            method: 'DELETE'
-        })
-            .then(res =>res.json())
-            .then(data =>console.log(data))
-    }
+    //     fetch(`http://localhost:5000/products/${_id}`, {
+    //         method: 'DELETE'
+    //     })
+    //         .then(res =>res.json())
+    //         .then(data =>console.log(data))
+    // }
     
 
 

@@ -24,7 +24,7 @@ const Login = () => {
             .then(result =>{
                 console.log(result.user);
                 e.target.reset();
-                swal("You have successfully logged in!", "success");
+                swal("Good job!","You have successfully logged in!", "success");
                 navigate(location?.state? location.state : "/");
             })
             .catch(error =>{

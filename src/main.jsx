@@ -31,14 +31,14 @@ const router = createBrowserRouter([
       {
         path: "/products/:name",
         element: <Products></Products>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.name}`)
+        loader: ({params}) => fetch(`http://localhost:5000/products/brandWise/${params.name}`)
         
 
       },
       {
         path: "/update/:id",
         element: <Update></Update>,
-        // loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params}) => fetch(`http://localhost:5000/products/productWise/${params.id}`)
       
       },
       {

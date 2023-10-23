@@ -42,7 +42,7 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 e.target.reset();
-                swal("You have successfully registered! Please login now!", "success");
+                swal("Good job!", "You have successfully registered! Please login now!", "success");
 
                 updateProfile(result.user, {displayName: name, photoURL:photo})
                     .then(() => console.log('Profile updated'))
