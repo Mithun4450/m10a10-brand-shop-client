@@ -42,7 +42,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl"><img className="w-16" src="/public/carlogo.png" alt="" /><span>Auto Shop</span></a>
+                    <a className="btn btn-ghost normal-case text-xl"><img className="w-16" src="/carlogo.png" alt="" /><span>Auto Shop</span></a>
                 </div>
 
 
