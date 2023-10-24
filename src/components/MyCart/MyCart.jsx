@@ -1,15 +1,19 @@
-import { useLoaderData } from "react-router-dom";
+
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import swal from 'sweetalert';
 
 
 const MyCart = () => {
     const loadedCarts = useLoaderData();
     const [carts, setCarts] = useState(loadedCarts);
+    console.log(loadedCarts)
+
+ 
 
     const handleCartDelete = _id =>{
-        
-        fetch(`https://m10a10-brand-shop-server.vercel.app/carts/${_id}`, {
+
+        fetch(`http://localhost:5000/carts/${_id}`, {
             method: 'DELETE'
         })
             .then(res =>res.json())
@@ -44,13 +48,13 @@ const MyCart = () => {
                         {/* row  */}
 
                         {
-                            Array.isArray(carts) && carts.map((cart, index) =><tr key={index}>
+                            carts.map((cart, index) =><tr key={cart._id}>
                                 <th>{index + 1}</th>
                                 <td>{cart.name}</td>
                                 <td>{cart.brandName}</td>
                                 <td>{cart.price}</td>
                                 <td><button onClick={() => handleCartDelete(cart._id)} className="btn btn-error btn-sm">Delete</button></td>
-                            </tr>)
+                              </tr>)
                         }
                         
                         </tbody>

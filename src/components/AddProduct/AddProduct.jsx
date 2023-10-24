@@ -1,29 +1,29 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import swal from 'sweetalert';
 
 const AddProduct = () => {
-    // const [products, setProducts] = useState(null);
+    const [products, setProducts] = useState(null);
     
 
-    // useEffect(() =>{
-    //     fetch('https://m10a10-brand-shop-server.vercel.app/products')
-    //     .then(res =>res.json())
-    //     .then(products => {
+    useEffect(() =>{
+        fetch('http://localhost:5000/products')
+        .then(res =>res.json())
+        .then(products => {
             
-    //         setProducts(products)
-    //         console.log(products)
-    //     })
-    // },[])
+            setProducts(products)
+            console.log(products)
+        })
+    },[])
 
-    // const handleDelete = _id =>{
+    const handleDelete = _id =>{
         
 
-    //     fetch(`https://m10a10-brand-shop-server.vercel.app/products/${_id}`, {
-    //         method: 'DELETE'
-    //     })
-    //         .then(res =>res.json())
-    //         .then(data =>console.log(data))
-    // }
+        fetch(`http://localhost:5000/products/${_id}`, {
+            method: 'DELETE'
+        })
+            .then(res =>res.json())
+            .then(data =>console.log(data))
+    }
     
 
 
@@ -65,14 +65,14 @@ const AddProduct = () => {
        
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    {/* <div className="text-center lg:text-left">
-                    {
+                    <div className="text-center lg:text-left">
+                    {/* {
                         Array.isArray(products) && products.map(product => <p key={product._id}><li key={product._id} >{product.name}</li> <button onClick={() => handleDelete (product._id)} >X</button></p>
                         
                         )
-                    }
+                    } */}
                     
-                    </div> */}
+                    </div>
                     <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
                     <form onSubmit={handleProductSubmit} className="card-body">
                         <div className="form-control">
