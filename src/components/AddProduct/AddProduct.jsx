@@ -63,7 +63,7 @@ const AddProduct = () => {
     
     return (
        
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen bg-base-200 my-9" style={{backgroundImage: 'url(/banner.png)'}}>
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                     {/* {
@@ -73,61 +73,50 @@ const AddProduct = () => {
                     } */}
                     
                     </div>
-                    <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
-                    <form onSubmit={handleProductSubmit} className="card-body">
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Product Name</span>
-                            </label>
-                            <input type="text" name="name" placeholder="Product name" className="input input-bordered"  />
-                        </div>
+                    <div className="card flex-shrink-0 w-full ">
+                    <form onSubmit={handleProductSubmit} className="card-body ">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                            <div className="form-control ">
+                               
+                                <input type="text" name="name" placeholder="Product name" className="input input-bordered"  />
+                            </div>
 
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Image</span>
-                            </label>
-                            <input type="text" name="photo" placeholder="Image URL" className="input input-bordered" />
-                            
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Brand Name</span>
-                            </label>
-                            <input type="text" name="brandName" placeholder="Brand Name" className="input input-bordered"  />
-                        </div>
+                            <div className="form-control ">
+                                
+                                <input type="text" name="photo" placeholder="Image URL" className="input input-bordered" />
+                                
+                            </div>
+                            <div className="form-control">
+                               
+                                <input type="text" name="brandName" placeholder="Brand Name" className="input input-bordered"  />
+                            </div>
 
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Type</span>
-                            </label>
-                            <input type="text" name="type" placeholder="Type" className="input input-bordered" />
-                            
+                            <div className="form-control">
+                                
+                                <input type="text" name="type" placeholder="Type" className="input input-bordered" />
+                                
+                            </div>
+                            <div className="form-control">
+                                
+                                <input type="text" name="price" placeholder="Price in USD" className="input input-bordered" />
+                                
+                            </div>
+                            <div className="form-control">
+                                
+                                <input type="text" name="rating" placeholder="Rate out of 5" className="input input-bordered" />
+                                
+                            </div>
                         </div>
                         <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Price</span>
-                            </label>
-                            <input type="text" name="price" placeholder="Price in USD" className="input input-bordered" />
-                            
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Short description</span>
-                            </label>
-                            <textarea className="border" name="description" placeholder="Write description here...." id="" cols="20" rows="10"></textarea>
+                           
+                            <textarea className="border p-4 rounded-lg" name="description" placeholder="Write short description here...." id="" cols="20" rows="5"></textarea>
                            
                         </div>
 
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Rating</span>
-                            </label>
-                            <input type="text" name="rating" placeholder="Rate out of 5" className="input input-bordered" />
-                            
-                        </div>
+                        
                         
                         <div className="form-control mt-6">
-                        <button className="btn btn-primary">Add Product</button>
+                        <button className="btn btn-accent lg:w-1/2 mx-auto">Add Product</button>
                         </div>
                     </form>
                     </div>
