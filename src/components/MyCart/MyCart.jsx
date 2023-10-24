@@ -32,12 +32,13 @@ const MyCart = () => {
         <div>
             
 
-            <div className="mx-auto w-1/4">
+            <div className="mx-auto w-1/2 my-14">
                 <div >
+                    <h1 className="text-2xl text-center font-bold mb-5">Products in the cart</h1>
                     <table className="table">
                         {/* head */}
                         <thead>
-                        <tr>
+                        <tr className="text-lg">
                             <th></th>
                             <th>Products Name</th>
                             <th>Brand</th>

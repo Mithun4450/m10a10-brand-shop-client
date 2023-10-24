@@ -63,7 +63,7 @@ const AddProduct = () => {
     
     return (
        
-            <div className="hero min-h-screen bg-base-200 my-9" style={{backgroundImage: 'url(/banner.png)'}}>
+            <div className="hero min-h-screen  my-14" style={{backgroundImage: 'url(/3.png)'}}>
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                     {/* {
