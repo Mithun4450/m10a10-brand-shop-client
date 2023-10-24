@@ -1,23 +1,24 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+import swal from 'sweetalert';
 
 const AddProduct = () => {
-    const [products, setProducts] = useState(null);
+    // const [products, setProducts] = useState(null);
     
 
-    useEffect(() =>{
-        fetch('http://localhost:5000/products')
-        .then(res =>res.json())
-        .then(products => {
+    // useEffect(() =>{
+    //     fetch('https://m10a10-brand-shop-server.vercel.app/products')
+    //     .then(res =>res.json())
+    //     .then(products => {
             
-            setProducts(products)
-            console.log(products)
-        })
-    },[])
+    //         setProducts(products)
+    //         console.log(products)
+    //     })
+    // },[])
 
     // const handleDelete = _id =>{
         
 
-    //     fetch(`http://localhost:5000/products/${_id}`, {
+    //     fetch(`https://m10a10-brand-shop-server.vercel.app/products/${_id}`, {
     //         method: 'DELETE'
     //     })
     //         .then(res =>res.json())
@@ -41,7 +42,7 @@ const AddProduct = () => {
 
         const product = {name, photo, brandName, type, price, description, rating};
         
-        fetch('http://localhost:5000/products', {
+        fetch('https://m10a10-brand-shop-server.vercel.app/products', {
             method: 'POST',
             headers: {
               'content-type' : 'application/json'
@@ -54,11 +55,11 @@ const AddProduct = () => {
               setProducts(data)
       
               if(data.insertedId){
-                alert('Product added successfully');
+                swal("Good job!","You have successfully added product!", "success");
                 form.reset();
               }
             })
-        }
+    }
     
     return (
        

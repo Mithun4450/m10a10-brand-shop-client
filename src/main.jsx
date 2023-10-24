@@ -45,13 +45,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/productDetails/:id",
-        element: <ProductDetails></ProductDetails>,
+        element: <ProtectedRoute><ProductDetails></ProductDetails></ProtectedRoute>,
         loader: ({params}) => fetch(`https://m10a10-brand-shop-server.vercel.app/products/productDetails/${params.id}`)
       
       },
       {
         path: "/myCart",
-        element: <MyCart></MyCart>
+        element: <ProtectedRoute><MyCart></MyCart></ProtectedRoute>,
+        loader: () => fetch(`https://m10a10-brand-shop-server.vercel.app/carts`)
       },
       {
         path: "/login",

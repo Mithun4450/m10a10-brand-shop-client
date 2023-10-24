@@ -20,7 +20,7 @@ const Update = () => {
         console.log(name, photo, brandName, type, price, description, rating);
         const updatedProduct = {name, photo, brandName, type, price, description, rating};
 
-        fetch(`http://localhost:5000/products/productWise/${product._id}`, {
+        fetch(`https://m10a10-brand-shop-server.vercel.app/products/productWise/${product._id}`, {
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'
@@ -35,6 +35,8 @@ const Update = () => {
                 if(data.modifiedCount > 0){
                     
                     swal("Good job!","You have successfully updated product!", "success");
+
+                    form.reset();
                 
                 }
                 
@@ -90,7 +92,7 @@ const Update = () => {
                             <label className="label">
                                 <span className="label-text">Short description</span>
                             </label>
-                            <textarea className="border" name="description" defaultValue={product.description} id="" cols="20" rows="10"></textarea>
+                            <textarea className="border p-5" name="description" defaultValue={product.description} id="" cols="20" rows="10"></textarea>
                            
                         </div>
 
