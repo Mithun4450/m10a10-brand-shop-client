@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import {  useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import swal from 'sweetalert';
 
@@ -8,8 +8,6 @@ const MyCart = () => {
     const loadedCarts = useLoaderData();
     const [carts, setCarts] = useState(loadedCarts);
     console.log(loadedCarts)
-
- 
 
     const handleCartDelete = _id =>{
 
@@ -53,7 +51,7 @@ const MyCart = () => {
                                 <th>{index + 1}</th>
                                 <td>{cart.name}</td>
                                 <td>{cart.brandName}</td>
-                                <td>{cart.price}</td>
+                                <td><span>$</span>{cart.price}</td>
                                 <td><button onClick={() => handleCartDelete(cart._id)} className="btn btn-error btn-sm">Delete</button></td>
                               </tr>)
                         }

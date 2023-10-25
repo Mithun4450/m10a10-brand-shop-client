@@ -1,9 +1,11 @@
 import { useLoaderData } from "react-router-dom";
-import { Link } from "react-router-dom";
 import swal from 'sweetalert';
+import { useNavigate } from "react-router-dom";
 
 
 const ProductDetails = () => {
+    const navigate = useNavigate();
+
     const details = useLoaderData();
     const {_id, name, photo, brandName, type, price, description, rating} = details;
     
@@ -25,7 +27,7 @@ const ProductDetails = () => {
       
               if(data.insertedId){
                 swal("Good job!","You have successfully added to the cart!", "success");
-                
+                navigate("/myCart")
               }
             })
     }
@@ -50,9 +52,9 @@ const ProductDetails = () => {
                 <p><span className="font-bold">Price: </span>$<span></span>{price}</p>
                 <p><span className="font-bold">Rating: </span><span>{rating}</span> out of 5</p>
                 
-                <Link to={`/myCart`}>
-                    <button onClick={handleAddToCart} className="btn btn-accent w-1/2 ">Add to Cart</button>
-                </Link>
+                
+                <button onClick={handleAddToCart} className="btn btn-accent w-1/2 ">Add to Cart</button>
+                
             </div>
           </div>
             
