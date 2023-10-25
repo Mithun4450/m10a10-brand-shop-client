@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       {
         path: "/myCart",
         element: <ProtectedRoute><MyCart></MyCart></ProtectedRoute>,
-        loader: () => fetch('http://localhost:5000/carts')
+        loader: () => fetch('https://m10a10-brand-shop-server.vercel.app/carts')
         
       },
       {

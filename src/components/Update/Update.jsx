@@ -3,7 +3,9 @@ import swal from 'sweetalert';
 
 
 
+
 const Update = () => {
+    
     const product = useLoaderData();
 
     const handleUpdateProduct = e =>{
@@ -37,6 +39,9 @@ const Update = () => {
                     swal("Good job!","You have successfully updated product!", "success");
 
                     form.reset();
+
+                   
+
                 
                 }
                 

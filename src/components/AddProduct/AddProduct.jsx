@@ -6,7 +6,7 @@ const AddProduct = () => {
     
 
     useEffect(() =>{
-        fetch('http://localhost:5000/products')
+        fetch('https://m10a10-brand-shop-server.vercel.app/products')
         .then(res =>res.json())
         .then(products => {
             
@@ -18,7 +18,7 @@ const AddProduct = () => {
     const handleDelete = _id =>{
         
 
-        fetch(`http://localhost:5000/products/${_id}`, {
+        fetch(`https://m10a10-brand-shop-server.vercel.app/products/${_id}`, {
             method: 'DELETE'
         })
             .then(res =>res.json())

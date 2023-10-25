@@ -8,9 +8,9 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 const Navbar = () => {
 
     const navLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/addProduct">Add Product</NavLink></li>
-        <li><NavLink to="/myCart">My Cart</NavLink></li>
+        <li><NavLink to="/">HOME</NavLink></li>
+        <li><NavLink to="/addProduct">ADD PRODUCT</NavLink></li>
+        <li><NavLink to="/myCart">MY CART</NavLink></li>
         
         
         
@@ -42,7 +42,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl"><img className="w-16" src="/carlogo.png" alt="" /><span>Auto Shop</span></a>
+                    <a className="btn btn-ghost normal-case text-xl"><img className="w-16" src="/carlogo.png" alt="" /><span>AUTO SHOP</span></a>
                 </div>
 
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="space-x-3 font-semibold w-full flex justify-center lg:w-1/4">
                 {
                     user? <>
-                    <p>{user.displayName}</p>
+                    <p className="uppercase">{user.displayName}</p>
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                         {

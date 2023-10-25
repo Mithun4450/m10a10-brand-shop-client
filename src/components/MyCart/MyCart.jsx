@@ -11,7 +11,7 @@ const MyCart = () => {
 
     const handleCartDelete = _id =>{
 
-        fetch(`http://localhost:5000/carts/${_id}`, {
+        fetch(`https://m10a10-brand-shop-server.vercel.app/carts/${_id}`, {
             method: 'DELETE'
         })
             .then(res =>res.json())
@@ -30,13 +30,13 @@ const MyCart = () => {
         <div>
             
 
-            <div className="mx-auto w-1/2 my-14">
+            <div className="mx-auto w-full md:w-1/2 my-14">
                 <div >
-                    <h1 className="text-2xl text-center font-bold mb-5">Products in the cart</h1>
+                    <h1 className=" text-lg md:text-2xl text-center font-bold mb-5">Products in the cart</h1>
                     <table className="table">
                         {/* head */}
                         <thead>
-                        <tr className="text-lg">
+                        <tr className="text-sm md:text-lg">
                             <th></th>
                             <th>Products Name</th>
                             <th>Brand</th>
@@ -52,8 +52,19 @@ const MyCart = () => {
                                 <td>{cart.name}</td>
                                 <td>{cart.brandName}</td>
                                 <td><span>$</span>{cart.price}</td>
-                                <td><button onClick={() => handleCartDelete(cart._id)} className="btn btn-error btn-sm">Delete</button></td>
-                              </tr>)
+                                <td>
+                                    <button onClick={() => handleCartDelete(cart._id)} className="btn btn-xs btn-square btn-outline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                                    </button>
+                                </td>
+
+
+                              
+
+
+                              </tr>
+                              
+                              )
                         }
                         
                         </tbody>
