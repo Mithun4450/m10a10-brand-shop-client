@@ -2,7 +2,7 @@
 
 const WhyUs = () => {
     return (
-        <div className="my-14 shadow-lg">
+        <div className="my-14 shadow-lg dark:bg-gray-900 dark:text-white p-10 rounded-lg">
             <div className="w-3/4 md:1/2 mx-auto">
                 <h1 className="text-4xl text-center font-bold">Why us</h1>
                 <p className="text-base text-center ">At Auto Shop, you can get a better deal when you’re buying a luxury car. a wide selection of new and  luxury cars is offered at competitive prices.</p>

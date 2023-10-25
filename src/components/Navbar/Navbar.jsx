@@ -27,7 +27,7 @@ const Navbar = () => {
         
     
     return (
-        <div className="navbar bg-base-100 py-4 flex flex-col md:flex-row border-b ">
+        <div className="navbar bg-base-100 dark:bg-gray-900 dark:text-white py-4 flex flex-col md:flex-row border-b ">
             
            
             <div className="w-3/4">

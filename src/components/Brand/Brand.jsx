@@ -9,7 +9,7 @@ const Brand = ({brand}) => {
     return (
         <div>
             <Link to={`/products/${name}`}>
-                <div   className="card bg-base-100 shadow-xl">
+                <div   className="card bg-base-100 shadow-xl  dark:bg-gray-900 dark:text-white">
                     <figure><img className="w-60 h-36 mt-6" src={photo} alt="brand logo" /></figure>
                     <div className="card-body mx-auto">
                         <h2 className="card-title text-center uppercase">{name}</h2>
