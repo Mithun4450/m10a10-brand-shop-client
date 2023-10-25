@@ -23,15 +23,15 @@ const Register = () => {
         setRegisterError('');
 
         if(password.length < 6){
-            setRegisterError('Password must be of 6 characters or longer.')
+            setRegisterError('Password should have 6 characters or longer.')
             return
         }
         else if(!/[A-Z]/.test(password)){
-            setRegisterError('Password must have at least one capital letter.')
+            setRegisterError('Password should have one capital letter.')
             return
         }
         else if(!/[@$!%*?&]/.test(password)){
-            setRegisterError('Password must have at least one special character.')
+            setRegisterError('Password should have one special character.')
             return
         }
 
