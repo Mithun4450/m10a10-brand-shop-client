@@ -4,7 +4,7 @@
 Live Link: https://m10a10-brand-shop-client.web.app
 
 
-About this project:
+Features of this project:
 * In this project Navbar and Footer are common for all pages. By default Home page is opened. If we click on Add Product, My cart and Login, we will go to these pages respectively. In the Home page there are banner, about us, popular brands and why us parts.
 
 * On the add product page, we can add products to mongodb database. Brands name and brand images are also added to mongodb database and used to make brand cards.
@@ -20,6 +20,9 @@ About this project:
 * Add Product, Product details, My Cart, Update pages are in the protected route. User will not be able to see these pages unless he is logged in.
 
 * If use is logged in, user's name image and logout will be shown on the navbar.
+
+
+ Technology used in this project : React.js, React-Router, Tailwind CSS, DaisyUI, React-Icons, Sweetalert, Firebase, Express.js, MongoDB
 
 
 
